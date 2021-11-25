@@ -27,7 +27,7 @@
 <h1 id="opening">Welcome to Square J</h1>
 <div id="welcome-screen">
     <input type="image" src="images/customer.png" onclick="location.href = 'login-page.php';" style="margin-right: 50px"/>
-    <input type="image" src="images/staff.png" />
+    <input type="image" src="images/staff.png" onclick="location.href = 'login-page-staff.php';"/>
 </div>
 
 </body>

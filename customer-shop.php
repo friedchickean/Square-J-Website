@@ -14,11 +14,11 @@
         <ul>
             <li><a href="#">Account</a>
                 <ul>
-                    <li><a href="#">Order</a></li>
                     <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </li>
-            <li><a href="#">Place Holder 1</a></li>
+            <li><a href="#">Orders</a></li>
             <li><a href="#">Place Holder 2</a></li>
         </ul>
         <input type="image" src="images/cart.png" />

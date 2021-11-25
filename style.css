@@ -181,6 +181,31 @@ LOGIN PAGE
     border-radius: 10px;
 }
 
+#shop-container h1 {
+    text-align: center;
+    font-family: Dubai;
+    font-size: 48px;
+}
+
+#shop-container button {
+    float: right;
+    width: 300px;
+    height: 80px;
+    margin-right: 5%;
+    font-size: 18px;
+    font-family: Dubai;
+    background-color: brown;
+    margin-top: 1%;
+}
+
+#total {
+    float: right;
+    font-size: 34px;
+    font-family: Dubai;
+    margin-top: 2%;
+    padding-right: 5%;
+}
+
 /*
 Items
  */
@@ -189,7 +214,7 @@ Items
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     padding: 20px;
-    margin-left: 500px;
+    margin-left: 270px;
 }
 
 .item-grid > div {
@@ -203,6 +228,11 @@ Items
     width: auto;
     height: 70%;
 }
+.item-grid div p {
+    font-size: 20px;
+    margin-top: 10%;
+    font-family: Dubai;
+}
 
 @media only screen and (max-width: 400px) {
     .item1 { grid-area: 1 / span 3 / 2 / 4; }
@@ -211,4 +241,65 @@ Items
     .item4 { grid-area: 2 / 2 / span 2 / 3; }
     .item5 { grid-area: 3 / 1 / 4 / 2; }
     .item6 { grid-area: 2 / 3 / 3 / 4; }
+}
+
+/*
+Staff stuff
+ */
+#staff-container {
+    width: 97%;
+    height: 120%;
+    display: block;
+    background-color: white;
+    margin: 24px;
+    border-radius: 10px;
+}
+
+#staff-container h1 {
+    text-align: center;
+    font-family: Dubai;
+    font-size: 48px;
+}
+#staff-container h2 {
+    font-family: Dubai;
+    font-size: 28px;
+    padding: 30px;
+}
+
+#staff-container h3 {
+    font-family: Dubai;
+    font-size: 28px;
+}
+
+#staff-container ul {
+    padding-bottom: 50px;
+}
+
+#staff-container ul li {
+    list-style: none;
+    margin-left: 5%;
+}
+
+#staff-container p {
+    font-family: Dubai;
+    font-size: 16px;
+}
+
+#staff-container button {
+    font-family: Dubai;
+    font-size: 18px;
+    width: 10%;
+    height: 4%;
+    margin: 10px;
+    color: white;
+}
+
+#staff-container button:hover {
+    opacity: 0.8;
+}
+
+#staff-container p.pos {
+    text-align: center;
+    font-size: 18px;
+    font-family: Dubai;
 }
