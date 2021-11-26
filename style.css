@@ -248,7 +248,7 @@ Staff stuff
  */
 #staff-container {
     width: 97%;
-    height: 120%;
+    height: auto;
     display: block;
     background-color: white;
     margin: 24px;
@@ -302,4 +302,18 @@ Staff stuff
     text-align: center;
     font-size: 18px;
     font-family: Dubai;
+}
+
+#staff-container h4 {
+    font-size: 20px;
+    font-family: Dubai;
+}
+
+#staff-container .edit-b {
+    font-family: Dubai;
+    font-size: 18px;
+    width: 5%;
+    height: 3%;
+    color: white;
+    margin: 0;
 }

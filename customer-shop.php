@@ -19,7 +19,6 @@
                 </ul>
             </li>
             <li><a href="#">Orders</a></li>
-            <li><a href="#">Place Holder 2</a></li>
         </ul>
         <input type="image" src="images/cart.png" />
     </nav>

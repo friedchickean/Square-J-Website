@@ -26,7 +26,7 @@
 
 <div id="staff-container">
     <h1><b>Hello Alex!</b></h1>
-    <p class="pos">Position: Manager</p>
+    <p class="pos">Position: Manager | Location: Calgary NE Store</p>
     <hr>
 
     <h2>Assigned Orders</h2>
@@ -64,6 +64,56 @@
         </li>
     </ul>
     <hr>
+
+    <h2>Store Inventory</h2>
+    <ul>
+        <li>
+            <button type="button" class="edit-b" style="background-color: green; float:right; margin-right: 50%; width: 9%">+ Add New Item</button>
+            <h4>Name | Quantity</h4>
+            <hr width="55%">
+        </li>
+        <li>
+            <h4>Red Bull | 2</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Bread | 12</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Banana | 25</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Milk | 65</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Kit kat | 78</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Keychains | 85</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Instant Noodles | 90</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+        <li>
+            <h4>Toilet Paper | 108</h4>
+            <button type="button" class="edit-b" style="background-color: grey">edit</button>
+            <button type="button" class="edit-b" style="background-color: brown">remove</button>
+        </li>
+
+    </ul>
 
 </div>
 
