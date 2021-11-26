@@ -10,7 +10,7 @@
 
 <div class="header">
     <nav>
-        <img src="images/logo.png" alt="square J">
+        <img src="images/logo.png" alt="square J" onclick="location.href = 'index.php';">
         <ul>
             <li><a href="#">Account</a>
                 <ul>
