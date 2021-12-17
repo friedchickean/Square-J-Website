@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <div class="login-page" style="margin-top: 150px;">
-    <form action="process_register.php">
+    <form action="process_register_staff.php">
         <label for="uname"><b>Username</b></label>
         <input type="text" style="margin-right: 5px" placeholder="Username" name="uname" required>
         <label for="uname"><b>Password</b></label>

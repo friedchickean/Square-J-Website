@@ -36,7 +36,7 @@
         <ul>
             <li><a href="#">Account</a>
                 <ul>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="staff-account.php">Settings</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </li>

@@ -5,7 +5,8 @@
     $acc_json = file_get_contents($acc_url);                  // GET request using username
     $acc_list = json_decode($acc_json, true);        // decode the JSON result
 
-    $phone = $acc_list['phone'];
+    // retrieve the phone number from the account response
+    $phone = $acc_list['phone_number'];
 
     $cust_url = 'http://localhost:8000/api/customer/' . $phone;
     $cust_json = file_get_contents($cust_url);
@@ -28,7 +29,7 @@
         <ul>
             <li><a href="#">Account</a>
                 <ul>
-                    <li><a href="customer-account.php/uname='<?php echo $uname?>'">Settings</a></li>
+                    <li><a href="customer-account.php?uname=<?php echo $uname?>">Settings</a></li>
                     <li><a href="index.php">Logout</a></li>
                 </ul>
             </li>

@@ -5,7 +5,7 @@
     $acc_json = file_get_contents($acc_url);
     $acc_list = json_decode($acc_json, true);
 
-    $phone = $acc_list['phone'];
+    $phone = $acc_list['phone_number'];
 
     $cust_url = 'http://localhost:8000/api/customer/' . $phone;
     $cust_json = file_get_contents($cust_url);
