@@ -1,3 +1,26 @@
+<?php
+    $uname = $_GET["uname"];
+    $password = $_GET["psw"];
+
+    $acc_url = 'http://localhost:8000/api/account/' . $uname;
+    $acc_json = file_get_contents($acc_url);
+    $acc_list = json_decode($acc_json, true);
+
+    $empl_id = $acc_list['employee_id'];
+
+    $empl_url = 'http://localhost:8000/api/employee/' . $empl_id;
+    $empl_json = file_get_contents($empl_url);
+    $empl_list = json_decode($empl_json, true);
+
+    $name = $empl_list['name'];
+
+    $jobs_url = 'http://localhost:8000/api/employee/jobs' . $empl_id;
+    $jobs_json = file_get_contents($jobs_url);
+    $jobs_list = json_decode($jobs_json, true);
+
+    // need to do customer jobs still
+?>
+
 <html>
 <head>
     <title>Square J - Staff</title>
@@ -5,8 +28,7 @@
 </head>
 
 <body>
-<?php
-?>
+
 
 <div class="header">
     <nav>
@@ -25,12 +47,18 @@
 </div>
 
 <div id="staff-container">
-    <h1><b>Hello Alex!</b></h1>
+    <h1><b><?php
+
+            echo "Hello " . $name . "!";
+            ?></b></h1>
     <p class="pos">Position: Manager | Location: Calgary NE Store</p>
     <hr>
 
     <h2>Assigned Orders</h2>
     <ul>
+        <?php
+
+        ?>
         <li>
             <h3>Order #4532</h3>
             <p>Customer Name: John Smith | Phone Number: (123)-456-7890 | Email: jsmith@email.com | Type: In-store pickup | Date: 11/07/2021 12:05:01</p>

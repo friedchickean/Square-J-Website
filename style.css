@@ -115,7 +115,7 @@ LOGIN PAGE
 
 .login-page {
     width: 35%;
-    height: 40%;
+    height: auto;
     background-color: white;
     border-radius: 10px;
     position: absolute;

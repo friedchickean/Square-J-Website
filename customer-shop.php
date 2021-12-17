@@ -1,3 +1,17 @@
+<?php
+    $uname = $_GET["uname"];
+
+    $acc_url = 'http://localhost:8000/api/account/' . $uname;
+    $acc_json = file_get_contents($acc_url);
+    $acc_list = json_decode($acc_json, true);
+
+    $phone = $acc_list['phone'];
+
+    $cust_url = 'http://localhost:8000/api/customer/' . $phone;
+    $cust_json = file_get_contents($cust_url);
+    $cust_list = json_decode($cust_json, true);
+
+?>
 <html>
 <head>
     <title>Square J - Customer Shop</title>
@@ -14,8 +28,8 @@
         <ul>
             <li><a href="#">Account</a>
                 <ul>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="customer-account.php/uname='<?php echo $uname?>'">Settings</a></li>
+                    <li><a href="index.php">Logout</a></li>
                 </ul>
             </li>
             <li><a href="#">Orders</a></li>
