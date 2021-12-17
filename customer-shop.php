@@ -1,9 +1,9 @@
 <?php
     $uname = $_GET["uname"];
 
-    $acc_url = 'http://localhost:8000/api/account/' . $uname;
-    $acc_json = file_get_contents($acc_url);
-    $acc_list = json_decode($acc_json, true);
+    $acc_url = 'http://localhost:8000/api/account/' . $uname; // url + username
+    $acc_json = file_get_contents($acc_url);                  // GET request using username
+    $acc_list = json_decode($acc_json, true);        // decode the JSON result
 
     $phone = $acc_list['phone'];
 

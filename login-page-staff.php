@@ -14,7 +14,7 @@
             <button type="submit">Login</button>
             <!--<button onclick="location.href = 'customer-shop.php';" type="submit">Login</button> -->
         </form>
-        <p>or <a href="#">Register</a></p>
+        <p>or <a href="staff-register.php">Register</a></p>
     </div>
 <body>
 </body>
